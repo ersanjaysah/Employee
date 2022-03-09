@@ -10,6 +10,7 @@ namespace MyEmployee
             obj.Employee();
             obj.EmpDailyWages();
             obj.EmpPartTime();
+            obj.WagesSwitch();
         }
     }
 }
