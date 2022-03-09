@@ -11,6 +11,7 @@ namespace MyEmployee
             obj.EmpDailyWages();
             obj.EmpPartTime();
             obj.WagesSwitch();
+            obj.WagesMonth();
         }
     }
 }

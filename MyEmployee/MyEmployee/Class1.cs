@@ -9,10 +9,12 @@ using System.Threading.Tasks;
         int Is_Full_Time = 1;
         int Is_Part_Time = 2;
         int Emp_Rate_Per_Hr = 20;
+        int totalWorkingDay = 20;
         int empHrs = 0;
         int empWage = 0;
+        int totalSalary = 0;
 
-        Random obj = new Random();
+    Random obj = new Random();
         
 
     public void Employee()
@@ -94,6 +96,38 @@ using System.Threading.Tasks;
             empWage = empHrs * Emp_Rate_Per_Hr;
             Console.WriteLine("Employee one day salary is= " + empWage);
         }
+    public void WagesMonth()
+        {
+            for (int day = 1; day <= totalWorkingDay; day++)
+            {
+                int randomCheck = obj.Next(0, 3);
+                switch (randomCheck)
+                {
+                    case 1:
+
+                        empHrs = 8;
+                        break;
+
+                    case 2:
+
+                        empHrs = 4;
+                        break;
+
+                    case 0:
+
+                        empHrs = 0;
+                        break;
+
+                }
+                empWage = empHrs * Emp_Rate_Per_Hr;
+                totalSalary = (totalSalary + empWage);
+
+
+            }
+            Console.WriteLine("Employee total salary for a month is= "+totalSalary);
 
     }
+}
+
+    
 
