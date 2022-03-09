@@ -12,6 +12,7 @@ namespace MyEmployee
             obj.EmpPartTime();
             obj.WagesSwitch();
             obj.WagesMonth();
+            obj.totalWorkingHrMonth();
         }
     }
 }
