@@ -37,7 +37,7 @@ namespace UC10_EmpWage_MultipleCompany_UsingInterface
 
         private int empWageForMultiCompanyUsingInterface(CompanyEmpWage companyEmpWage)
         {
-            int empHrs = 0, totalEmpHrs = 0, totalWorkingDays = 0;     // variable
+            int empHrs = 0, totalEmpHrs = 0, totalWorkingDays = 0;     
             while (totalEmpHrs <= companyEmpWage.maxHoursPerMonth && totalWorkingDays < companyEmpWage.numOfWorkingDays)
             {
                 totalWorkingDays++;
