@@ -42,11 +42,11 @@ public class Program
                 Console.WriteLine("Days=" + totalWorkingDays + " empHrs=" + empHrs);
 
             }
-            int totalSalary = totalEmpHrs * this.empRatePerHr;
-            Console.WriteLine("Total Employees wage for company " + company + " is =" + totalSalary);
+            totalEmpWage = totalEmpHrs * this.empRatePerHr;
+            Console.WriteLine("Total Employees wage for company " + company + " is =" + totalEmpWage);
 
         }
-        public string myMethod()
+        public string toString()
         {
             return "Total employee wage for company is " + this.company + " is =" + this.totalEmpWage;
         }
@@ -56,9 +56,9 @@ public class Program
             Program Dmart = new Program("Dmart",5,20,10);
             Program Reliance = new Program("Reliance", 20, 5, 20);
             Dmart.saveEmployeeWages();
-            Console.WriteLine(Dmart.ToString());
+            Console.WriteLine(Dmart.toString());
             Reliance.saveEmployeeWages();
-            Console.WriteLine(Reliance.ToString());
+            Console.WriteLine(Reliance.toString());
         }
     }
 
